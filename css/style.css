@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -47,7 +48,7 @@ a {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/hero-dish.jpg') center/cover no-repeat;
+   background: url("../images/hero-dish.jpg") center/cover no-repeat;
   filter: blur(5px) brightness(0.7);
   transform: scale(1.05);
   opacity: 0.85;

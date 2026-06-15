@@ -7,110 +7,117 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div id="navbar"></div>
+  <!-- Header / Navbar -->
+  <header>
+    <nav id="navbar"></nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Savory Haven</h1>
-      <p>Delicious meals, crafted with love.</p>
-      <button class="cta-btn">Reserve a Table</button>
-    </div>
-    <div class="hero-image">
-      <img src="images/hero-dish.jpg" alt="Signature Dish">
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main>
 
-  <!-- Featured Dishes -->
-  <section class="featured">
-    <h2>Our Special Dishes</h2>
-    <div class="dish-slider">
-      <div class="dish-track">
-        <div class="dish-card">
-          <div class="dish-image"><img src="images/dish1.jpg" alt="Dish 1"></div>
-          <h3>BBQ</h3>
-          <p>Fresh flavors with a chef's touch.</p>
-        </div>
-        <div class="dish-card">
-          <div class="dish-image"><img src="images/dish2.jpg" alt="Dish 2"></div>
-          <h3>Seasoned Salad</h3>
-          <p>Seasonal ingredients, bold presentation.</p>
-        </div>
-        <div class="dish-card">
-          <div class="dish-image"><img src="images/dish3.jpg" alt="Dish 3"></div>
-          <h3>Grilled Salmon</h3>
-          <p>Classic comfort with modern flair.</p>
-        </div>
-        <div class="dish-card">
-          <div class="dish-image"><img src="images/dish4.jpg" alt="Dish 4"></div>
-          <h3>Premium Pancakes</h3>
-          <p>Signature dish served with style.</p>
-        </div>
-        <div class="dish-card">
-          <div class="dish-image"><img src="images/dish5.jpg" alt="Dish 5"></div>
-          <h3>Chicken Parmesan</h3>
-          <p>Rich textures and vibrant taste.</p>
-        </div>
-        <div class="dish-card">
-          <div class="dish-image"><img src="images/dish6.jpg" alt="Dish 6"></div>
-          <h3>Pancakes</h3>
-          <p>Handcrafted plates, unforgettable aroma.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Savory Haven</h1>
+        <p>Delicious meals, crafted with love.</p>
+        <button class="cta-btn">Reserve a Table</button>
+      </div>
+      <figure class="hero-image">
+        <img src="images/hero-dish.jpg" alt="Signature Dish" />
+      </figure>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+      <h2>Our Special Dishes</h2>
+      <div class="dish-slider">
+        <div class="dish-track">
+          <article class="dish-card">
+            <figure class="dish-image"><img src="images/dish1.jpg" alt="Dish 1"></figure>
+            <h3>BBQ</h3>
+            <p>Fresh flavors with a chef's touch.</p>
+          </article>
+          <article class="dish-card">
+            <figure class="dish-image"><img src="images/dish2.jpg" alt="Dish 2"></figure>
+            <h3>Seasoned Salad</h3>
+            <p>Seasonal ingredients, bold presentation.</p>
+          </article>
+          <article class="dish-card">
+            <figure class="dish-image"><img src="images/dish3.jpg" alt="Dish 3"></figure>
+            <h3>Grilled Salmon</h3>
+            <p>Classic comfort with modern flair.</p>
+          </article>
+          <article class="dish-card">
+            <figure class="dish-image"><img src="images/dish4.jpg" alt="Dish 4"></figure>
+            <h3>Premium Pancakes</h3>
+            <p>Signature dish served with style.</p>
+          </article>
+          <article class="dish-card">
+            <figure class="dish-image"><img src="images/dish5.jpg" alt="Dish 5"></figure>
+            <h3>Chicken Parmesan</h3>
+            <p>Rich textures and vibrant taste.</p>
+          </article>
+          <article class="dish-card">
+            <figure class="dish-image"><img src="images/dish6.jpg" alt="Dish 6"></figure>
+            <h3>Pancakes</h3>
+            <p>Handcrafted plates, unforgettable aroma.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Why Choose Us -->
+    <section class="why-us-split">
+      <figure class="why-us-image">
+        <img src="images/hero-dish.jpg" alt="Fine Dining Experience">
+      </figure>
+      <div class="why-us-text">
+        <h2>Why Choose Us</h2>
+        <p>
+          At Savory Haven, we combine fresh ingredients, elegant ambiance, and
+          exceptional service to create unforgettable dining experiences.
+        </p>
+        <ul>
+          <li>Farm-to-table freshness</li>
+          <li>Cozy and luxurious atmosphere</li>
+          <li>Expert chefs with passion</li>
+          <li>Friendly staff and warm service</li>
+        </ul>
+        <a href="about.html" class="btn-more">Learn More</a>
+      </div>
+    </section>
 
-  
-<!-- Why Choose Us -->
-<section class="why-us-split">
-  <div class="why-us-image">
-    <img src="images/hero-dish.jpg" alt="Fine Dining Experience">
-  </div>
-  <div class="why-us-text">
-    <h2>Why Choose Us</h2>
-    <p>
-      At Savory Haven, we combine fresh ingredients, elegant ambiance, and
-      exceptional service to create unforgettable dining experiences.
-    </p>
-    <ul>
-      <li>Farm-to-table freshness</li>
-      <li>Cozy and luxurious atmosphere</li>
-      <li>Expert chefs with passion</li>
-      <li>Friendly staff and warm service</li>
-    </ul>
-    <a href="about.html" class="btn-more">Learn More</a>
-  </div>
-</section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-cards">
+        <article class="testimonial">
+          <blockquote>"Best dining experience ever!"</blockquote>
+          <span>— Emma, regular guest</span>
+        </article>
+        <article class="testimonial">
+          <blockquote>"Amazing food and friendly staff."</blockquote>
+          <span>— Noah, weekend diner</span>
+        </article>
+        <article class="testimonial">
+          <blockquote>"The ambiance and service were perfect."</blockquote>
+          <span>— Sofia, first-time visitor</span>
+        </article>
+      </div>
+    </section>
 
-
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial-cards">
-      <blockquote>"Best dining experience ever!"
-        <span>— Emma, regular guest</span>
-      </blockquote>
-      <blockquote>"Amazing food and friendly staff."
-        <span>— Noah, weekend diner</span>
-      </blockquote>
-      <blockquote>"The ambiance and service were perfect."
-        <span>— Sofia, first-time visitor</span>
-      </blockquote>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <div id="footer"></div>
+  <footer id="footer"></footer>
 
-  <script src="navbar.js"></script>
-  <script src="footer.js"></script>
-  <script src="script.js"></script></body>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
