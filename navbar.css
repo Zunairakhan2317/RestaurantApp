@@ -1,0 +1,86 @@
+.navbar {
+  position: relative;
+  z-index: 20;
+  background: rgba(8, 8, 8, 0.95);
+  color: #f5f2ec;
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Brand section (logo + name) */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 42px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8e8d4;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links li a {
+  color: #e8e2d6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d4af37;
+}
+
+.nav-links li a.active {
+  color: #d4af37;
+}
+
+/* Mobile toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #f8f0dc;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(18, 18, 18, 0.98);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 18px 24px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
