@@ -3,7 +3,8 @@
   z-index: 20;
   background: rgba(8, 8, 8, 0.95);
   color: #f5f2ec;
-  padding: 18px 32px;
+  padding: 14px 28px;
+  min-height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +24,7 @@
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #f8e8d4;
 }
@@ -57,6 +58,7 @@
   font-size: 1.8rem;
   color: #f8f0dc;
   cursor: pointer;
+  line-height: 1;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +83,10 @@
   }
 
   .nav-toggle {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
   }
 }
