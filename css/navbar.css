@@ -24,6 +24,7 @@
 }
 
 .logo-text {
+    font-family: "Brush Script MT", cursive;
   font-size: 1.2rem;
   font-weight: 700;
   color: #f8e8d4;
@@ -42,7 +43,8 @@
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover ,
+.nav-links li a.active {
   color: #d4af37;
 }
 

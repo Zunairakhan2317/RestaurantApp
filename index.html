@@ -1,153 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geschmack Gang</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geschmack Gang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav id="navbar"></nav>
+    </header>
 
-  <!-- Header / Navbar -->
-  <header>
-    <nav id="navbar"></nav>
-  </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
+          <h1>Welcome to Geschmack Gang</h1>
+          <p>Delicious meals, crafted with love.</p>
+          <button class="cta-btn">Reserve a Table</button>
+        </div>
+        <figure class="hero-image">
+          <picture>
+            <source srcset="images/hero-dish.webp" type="image/webp" />
+            <img src="images/hero-dish.jpg" alt="Signature Dish" />
+          </picture>
+        </figure>
+      </section>
 
-  <!-- Main Content -->
-  <main>
+      <!-- Featured Dishes -->
+      <section class="featured">
+        <h2 data-aos="fade-up" data-aos-duration="800">Our Special Dishes</h2>
+        <div class="dish-slider">
+          <div class="dish-track">
+            <article
+              class="dish-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <figure class="dish-image">
+                <img src="images/dish1.webp" alt="Dish 1" />
+              </figure>
+              <h3>Haven BBQ Platter</h3>
+              <p>Grilled meats with a side of vegetables.</p>
+            </article>
+            <article
+              class="dish-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="150"
+            >
+              <figure class="dish-image">
+                <img src="images/Oreo-Cookies.webp" alt="Dish 2" />
+              </figure>
+              <h3>Oreo Cookies</h3>
+              <p>Delicious cookies with Oreo filling.</p>
+            </article>
+            <article
+              class="dish-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <figure class="dish-image">
+                <img src="images/dish3.webp" alt="Dish 3" />
+              </figure>
+              <h3>Grilled Salmon</h3>
+              <p>Fresh salmon grilled to perfection.</p>
+            </article>
+            <article
+              class="dish-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="250"
+            >
+              <figure class="dish-image">
+                <img src="images/dish4.webp" alt="Dish 4" />
+              </figure>
+              <h3>Premium Pancakes</h3>
+              <p>Signature dish served with style.</p>
+            </article>
+            <article
+              class="dish-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              <figure class="dish-image">
+                <img src="images/dish5.webp" alt="Dish 5" />
+              </figure>
+              <h3>Chicken Parmesan</h3>
+              <p>Rich textures and vibrant taste.</p>
+            </article>
+            <article
+              class="dish-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="350"
+            >
+              <figure class="dish-image">
+                <img src="images/dish6.webp" alt="Dish 6" />
+              </figure>
+              <h3>Pancakes</h3>
+              <p>Handcrafted plates, unforgettable aroma.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to Geschmack Gang</h1>
-        <p>Delicious meals, crafted with love.</p>
-        <button class="cta-btn">Reserve a Table</button>
-      </div>
-      <figure class="hero-image">
-        <picture>
-          <source srcset="images/hero-dish.webp" type="image/webp">
-          <img src="images/hero-dish.jpg" alt="Signature Dish" />
-        </picture>
-      </figure>
-    </section>
+      <!-- Why Choose Us -->
+      <section class="why-us-split">
+        <figure
+          class="why-us-image"
+          data-aos="fade-right"
+          data-aos-duration="900"
+        >
+          <picture>
+            <source srcset="images/hero-dish.webp" type="image/webp" />
+            <img src="images/hero-dish.jpg" alt="Fine Dining Experience" />
+          </picture>
+        </figure>
+        <div class="why-us-text" data-aos="fade-left" data-aos-duration="900">
+          <h2>Why Choose Us</h2>
+          <p>
+            At Geschmack Gang, we combine fresh ingredients, elegant ambiance,
+            and exceptional service to create unforgettable dining experiences.
+          </p>
+          <ul>
+            <li>Farm-to-table freshness</li>
+            <li>Cozy and luxurious atmosphere</li>
+            <li>Expert chefs with passion</li>
+            <li>Friendly staff and warm service</li>
+          </ul>
+          <a href="about.html" class="btn-more">Learn More</a>
+        </div>
+      </section>
 
-    <!-- Featured Dishes -->
-    <section class="featured">
-      <h2>Our Special Dishes</h2>
-      <div class="dish-slider">
-        <div class="dish-track">
-          <article class="dish-card">
-            <figure class="dish-image">
-              
-                <img src="images/dish1.webp" alt="Dish 1">
-              
-            </figure>
-            <h3>Haven BBQ Platter</h3>
-            <p>Grilled meats with a side of vegetables.</p>
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <h2 data-aos="fade-up" data-aos-duration="800">
+          What Our Customers Say
+        </h2>
+        <div class="testimonial-cards">
+          <article
+            class="testimonial"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <blockquote>"Best dining experience ever!"</blockquote>
+            <span>— Emma, regular guest</span>
           </article>
-          <article class="dish-card">
-            <figure class="dish-image">
-             
-                <img src="images/Oreo-Cookies.webp" alt="Dish 2">
-             
-            </figure>
-            <h3>Oreo Cookies</h3>
-            <p>Delicious cookies with Oreo filling.</p>
+          <article
+            class="testimonial"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="150"
+          >
+            <blockquote>"Amazing food and friendly staff."</blockquote>
+            <span>— Noah, weekend diner</span>
           </article>
-          <article class="dish-card">
-            <figure class="dish-image">
-             
-                <img src="images/dish3.webp" alt="Dish 3">
-             
-            </figure>
-            <h3>Grilled Salmon</h3>
-            <p>Fresh salmon grilled to perfection.</p>
-          </article>
-          <article class="dish-card">
-            <figure class="dish-image">
-           
-                <img src="images/dish4.webp" alt="Dish 4">
-      
-            </figure>
-            <h3>Premium Pancakes</h3>
-            <p>Signature dish served with style.</p>
-          </article>
-          <article class="dish-card">
-            <figure class="dish-image">
-            
-                <img src="images/dish5.webp" alt="Dish 5">
-        
-            </figure>
-            <h3>Chicken Parmesan</h3>
-            <p>Rich textures and vibrant taste.</p>
-          </article>
-          <article class="dish-card">
-            <figure class="dish-image">
-              
-                <img src="images/dish6.webp" alt="Dish 6">
-              
-            </figure>
-            <h3>Pancakes</h3>
-            <p>Handcrafted plates, unforgettable aroma.</p>
+          <article
+            class="testimonial"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <blockquote>"The ambiance and service were perfect."</blockquote>
+            <span>— Sofia, first-time visitor</span>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Why Choose Us -->
-    <section class="why-us-split">
-      <figure class="why-us-image">
-        <picture>
-          <source srcset="images/hero-dish.webp" type="image/webp">
-          <img src="images/hero-dish.jpg" alt="Fine Dining Experience">
-        </picture>
-      </figure>
-      <div class="why-us-text">
-        <h2>Why Choose Us</h2>
-        <p>
-          At Geschmack Gang, we combine fresh ingredients, elegant ambiance, and
-          exceptional service to create unforgettable dining experiences.
-        </p>
-        <ul>
-          <li>Farm-to-table freshness</li>
-          <li>Cozy and luxurious atmosphere</li>
-          <li>Expert chefs with passion</li>
-          <li>Friendly staff and warm service</li>
-        </ul>
-        <a href="about.html" class="btn-more">Learn More</a>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <h2>What Our Customers Say</h2>
-      <div class="testimonial-cards">
-        <article class="testimonial">
-          <blockquote>"Best dining experience ever!"</blockquote>
-          <span>— Emma, regular guest</span>
-        </article>
-        <article class="testimonial">
-          <blockquote>"Amazing food and friendly staff."</blockquote>
-          <span>— Noah, weekend diner</span>
-        </article>
-        <article class="testimonial">
-          <blockquote>"The ambiance and service were perfect."</blockquote>
-          <span>— Sofia, first-time visitor</span>
-        </article>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer id="footer"></footer>
-
-  <script src="js/navbar.js"></script>
-  <script src="js/footer.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

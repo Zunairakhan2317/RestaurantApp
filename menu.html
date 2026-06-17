@@ -1,325 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Savory Haven</title>
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/menu.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav id="navbar"></nav>
-  </header>
-  <main>
-    <!-- Menu Section -->
-    <section class="menu">
-      <h2 class="section-heading">Our Menu</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Geschmack Gang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav id="navbar"></nav>
+    </header>
+    <main>
+      <!-- Menu Section -->
+      <section class="menu">
+        <h2 class="section-heading" data-aos="fade-up" data-aos-duration="800">
+          Our Menu
+        </h2>
 
-      <!-- Search + Filter -->
-      <div class="menu-controls">
-        <input type="text" id="search" placeholder="Search dishes...">
-        <select id="category-filter">
-          <option value="all">All Categories</option>
-          <option value="bbq">BBQ</option>
-          <option value="pizza">Pizza</option>
-          <option value="burgers">Burgers</option>
-          <option value="drinks">Drinks</option>
-          <option value="desserts">Desserts</option>
-        </select>
-      </div>
+        <!-- Search + Filter -->
+        <div
+          class="menu-controls"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
+          <input type="text" id="search" placeholder="Search dishes..." />
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="bbq">BBQ</option>
+            <option value="pizza">Pizza</option>
+            <option value="burgers">Burgers</option>
+            <option value="drinks">Drinks</option>
+            <option value="desserts">Desserts</option>
+          </select>
+        </div>
 
-      <!-- Menu Grid -->
-      <div class="menu-grid">
+        <!-- Menu Grid -->
+        <div class="menu-grid">
+          <article class="menu-card" data-category="bbq">
+            <figure class="menu-image">
+              <img src="images/chicken-tikka-boti.webp" alt="BBQ" />
+            </figure>
+            <h3>Chicken Tikka Boti</h3>
+            <p>Smoky flavors with chef’s touch.</p>
+            <span class="price">Rs 500</span>
+          </article>
 
-        <article class="menu-card" data-category="bbq">
-          <figure class="menu-image">
-          
-              <img src="images/chicken-tikka-boti.webp" alt="BBQ">
-           
-          </figure>
-          <h3>Chicken Tikka Boti</h3>
-          <p>Smoky flavors with chef’s touch.</p>
-          <span class="price">Rs 500</span>
-        </article>
+          <article class="menu-card" data-category="desserts">
+            <figure class="menu-image">
+              <img src="images/Chocolate-Cake.webp" alt="Dessert" />
+            </figure>
+            <h3>Chocolate Cake</h3>
+            <p>Rich and indulgent treat.</p>
+            <span class="price">Rs 1000</span>
+          </article>
 
-        <article class="menu-card" data-category="desserts">
-          <figure class="menu-image">
-            
-              <img src="images/Chocolate-Cake.webp" alt="Dessert">
-            
-          </figure>
-          <h3>Chocolate Cake</h3>
-          <p>Rich and indulgent treat.</p>
-          <span class="price">Rs 1000</span>
-        </article>
+          <article class="menu-card" data-category="bbq">
+            <figure class="menu-image">
+              <img src="images/dish1.webp" alt="BBQ" />
+            </figure>
+            <h3>Haven BBQ platter</h3>
+            <p>Grilled meats with a side of vegetables.</p>
+            <span class="price">Rs 1200</span>
+          </article>
 
-        <article class="menu-card" data-category="bbq">
-          <figure class="menu-image">
-            
-              <img src="images/dish1.webp" alt="BBQ">
-            
-          </figure>
-          <h3>Haven BBQ platter</h3>
-          <p>Grilled meats with a side of vegetables.</p>
-          <span class="price">Rs 1200</span>
-        </article>
+          <article class="menu-card" data-category="pizza">
+            <figure class="menu-image">
+              <img src="images/Fajita-pizza.webp" alt="Pizza" />
+            </figure>
+            <h3>Fajita Pizza</h3>
+            <p>Cheesy delight with fresh toppings.</p>
+            <div class="sizes-row">
+              <span>Small - <span class="price">Rs400</span></span>
+              <span>Medium - <span class="price">Rs600</span></span>
+              <span>Large - <span class="price">Rs800</span></span>
+            </div>
+          </article>
 
-        <article class="menu-card" data-category="pizza">
-          <figure class="menu-image">
-           
-              <img src="images/Fajita-pizza.webp" alt="Pizza">
-          
-          </figure>
-          <h3>Fajita Pizza</h3>
-          <p>Cheesy delight with fresh toppings.</p>
-          <div class="sizes-row">
-            <span>Small - <span class="price">Rs400</span></span>
-            <span>Medium - <span class="price">Rs600</span></span>
-            <span>Large - <span class="price">Rs800</span></span>
-          </div>
-        </article>
+          <article class="menu-card" data-category="drinks">
+            <figure class="menu-image">
+              <img src="images/Mocktail.webp" alt="Drink" />
+            </figure>
+            <h3>Mocktail</h3>
+            <p>Refreshing blend of fruits.</p>
+            <span class="price">Rs 200</span>
+          </article>
 
-        <article class="menu-card" data-category="drinks">
-          <figure class="menu-image">
-           
-              <img src="images/Mocktail.webp" alt="Drink">
-          
-          </figure>
-          <h3>Mocktail</h3>
-          <p>Refreshing blend of fruits.</p>
-          <span class="price">Rs 200</span>
-        </article>
+          <article class="menu-card" data-category="desserts">
+            <figure class="menu-image">
+              <img src="images/dish4.webp" alt="Dessert" />
+            </figure>
+            <h3>Premium Pancakes(5 pcs)</h3>
+            <p>Signature pancakes with a twist.</p>
+            <span class="price">Rs 800</span>
+          </article>
 
-        <article class="menu-card" data-category="desserts">
-          <figure class="menu-image">
-            
-              <img src="images/dish4.webp" alt="Dessert">
-            
-          </figure>
-          <h3>Premium Pancakes(5 pcs)</h3>
-          <p>Signature pancakes with a twist.</p>
-          <span class="price">Rs 800</span>
-        </article>
+          <article class="menu-card" data-category="burgers">
+            <figure class="menu-image">
+              <img src="images/Chicken-Burger.webp" alt="Burger" />
+            </figure>
+            <h3>Chicken Burger</h3>
+            <p>Spicy chicken patty with fresh vegetables.</p>
+            <span class="price">Rs 600</span>
+          </article>
 
-        <article class="menu-card" data-category="burgers">
-          <figure class="menu-image">
-            
-              <img src="images/Chicken-Burger.webp" alt="Burger">
-            
-          </figure>
-          <h3>Chicken Burger</h3>
-          <p>Spicy chicken patty with fresh vegetables.</p>
-<span class="price">Rs 600</span>
-</article>
+          <article class="menu-card" data-category="pizza">
+            <figure class="menu-image">
+              <img src="images/BBq-Pizza.webp" alt="Pizza" />
+            </figure>
+            <h3>BBQ Pizza</h3>
+            <p>Tender chicken with smoky BBQ sauce.</p>
+            <div class="sizes-row">
+              <span>Small - <span class="price">Rs400</span></span>
+              <span>Medium - <span class="price">Rs600</span></span>
+              <span>Large - <span class="price">Rs800</span></span>
+            </div>
+          </article>
 
-   
+          <article class="menu-card" data-category="bbq">
+            <figure class="menu-image">
+              <img src="images/dish3.webp" alt="BBQ" />
+            </figure>
+            <h3>Grilled Salmon</h3>
+            <p>Fresh salmon grilled to perfection.</p>
+            <span class="price">Rs 1200</span>
+          </article>
 
-        <article class="menu-card" data-category="pizza">
-          <figure class="menu-image">
-           
-              <img src="images/BBq-Pizza.webp" alt="Pizza">
-           
-          </figure>
-          <h3>BBQ Pizza</h3>
-          <p>Tender chicken with smoky BBQ sauce.</p>
-          <div class="sizes-row">
-            <span>Small - <span class="price">Rs400</span></span>
-            <span>Medium - <span class="price">Rs600</span></span>
-            <span>Large - <span class="price">Rs800</span></span>
-          </div>
-        </article>
+          <article class="menu-card" data-category="desserts">
+            <figure class="menu-image">
+              <img src="images/dish6.webp" alt="Dessert" />
+            </figure>
+            <h3>Pancakes</h3>
+            <p>Handcrafted plates, unforgettable aroma.</p>
+            <span class="price">Rs 70(each)</span>
+          </article>
 
-        <article class="menu-card" data-category="bbq">
-          <figure class="menu-image">
-            
-              <img src="images/dish3.webp" alt="BBQ">
-        
-          </figure>
-          <h3>Grilled Salmon</h3>
-          <p>Fresh salmon grilled to perfection.</p>
-          <span class="price">Rs 1200</span>
-        </article>
+          <article class="menu-card" data-category="pizza">
+            <figure class="menu-image">
+              <img src="images/Sausage-Pizza.webp" alt="Pizza" />
+            </figure>
+            <h3>Sausage Pizza</h3>
+            <p>Delicious sausage with melted cheese.</p>
+            <div class="sizes-row">
+              <span>Small - <span class="price">Rs400</span></span>
+              <span>Medium - <span class="price">Rs600</span></span>
+              <span>Large - <span class="price">Rs800</span></span>
+            </div>
+          </article>
 
-        <article class="menu-card" data-category="desserts">
-          <figure class="menu-image">
-       
-              <img src="images/dish6.webp" alt="Dessert">
-          
-          </figure>
-          <h3>Pancakes</h3>
-          <p>Handcrafted plates, unforgettable aroma.</p>
-          <span class="price">Rs 70(each)</span>
-        </article>
+          <article class="menu-card" data-category="burgers">
+            <figure class="menu-image">
+              <img src="images/Beef-Burger.webp" alt="Burger" />
+            </figure>
+            <h3>Beef Burger</h3>
+            <p>Juicy patty with crisp veggies.</p>
+            <span class="price">Rs 600</span>
+          </article>
 
-        <article class="menu-card" data-category="pizza">
-          <figure class="menu-image">
-           
-              <img src="images/Sausage-Pizza.webp" alt="Pizza">
-         
-          </figure>
-          <h3>Sausage Pizza</h3>
-          <p>Delicious sausage with melted cheese.</p>
-          <div class="sizes-row">
-            <span>Small - <span class="price">Rs400</span></span>
-            <span>Medium - <span class="price">Rs600</span></span>
-            <span>Large - <span class="price">Rs800</span></span>
-          </div>
-        </article>
+          <article class="menu-card" data-category="drinks">
+            <figure class="menu-image">
+              <img src="images/Coffee.webp" alt="Drink" />
+            </figure>
+            <h3>Coffee</h3>
+            <p>Rich and aromatic blend.</p>
+            <span class="price">Rs 200</span>
+          </article>
 
-             <article class="menu-card" data-category="burgers">
-          <figure class="menu-image">
-            
-              <img src="images/Beef-Burger.webp" alt="Burger">
-            
-          </figure>
-          <h3>Beef Burger</h3>
-          <p>Juicy patty with crisp veggies.</p>
-          <span class="price">Rs 600</span>
-        </article>
-      
+          <article class="menu-card" data-category="bbq">
+            <figure class="menu-image">
+              <img src="images/dish5.webp" alt="BBQ" />
+            </figure>
+            <h3>Chicken Parmesan</h3>
+            <p>Rich textures and vibrant taste.</p>
+            <span class="price">Rs 750</span>
+          </article>
 
-        <article class="menu-card" data-category="drinks">
-          <figure class="menu-image">
-           
-              <img src="images/Coffee.webp" alt="Drink">
-         
-          </figure>
-          <h3>Coffee</h3>
-          <p>Rich and aromatic blend.</p>
-          <span class="price">Rs 200</span>
-        </article>
+          <article class="menu-card" data-category="drinks">
+            <figure class="menu-image">
+              <img src="images/Smoothies.webp" alt="Drink" />
+            </figure>
+            <h3>Smoothies</h3>
+            <p>Range of fresh fruit blends (multiple options available)</p>
+            <span class="price">Rs 350</span>
+          </article>
 
-        <article class="menu-card" data-category="bbq">
-          <figure class="menu-image">
-          
-              <img src="images/dish5.webp" alt="BBQ">
-         
-          </figure>
-          <h3>Chicken Parmesan</h3>
-          <p>Rich textures and vibrant taste.</p>
-          <span class="price">Rs 750</span>
-        </article>
+          <article class="menu-card" data-category="desserts">
+            <figure class="menu-image">
+              <img src="images/Oreo-Cookies.webp" alt="Dessert" />
+            </figure>
+            <h3>Oreo Cookies</h3>
+            <p>Delicious cookies with Oreo filling.</p>
+            <span class="price">Rs 450</span>
+          </article>
 
-        
-        <article class="menu-card" data-category="drinks">
-          <figure class="menu-image">
-           
-              <img src="images/Smoothies.webp" alt="Drink">
-     
-          </figure>
-<h3>Smoothies</h3>
-<p>Range of fresh fruit blends (multiple options available)</p>
-<span class="price">Rs 350</span>
+          <article class="menu-card" data-category="bbq">
+            <figure class="menu-image">
+              <img src="images/Seekh-Kabab.webp" alt="BBQ" />
+            </figure>
+            <h3>Seekh kabab</h3>
+            <p>Grilled meatballs with a blend of spices.</p>
+            <span class="price">Rs 600</span>
+          </article>
 
-</article>
+          <article class="menu-card" data-category="drinks">
+            <figure class="menu-image">
+              <img src="images/Soft-Drinks.webp" alt="Drink" />
+            </figure>
+            <h3>Soft Drinks</h3>
+            <p>Refreshing beverages to quench your thirst.</p>
+            <span class="price">Rs 150</span>
+          </article>
 
+          <article class="menu-card" data-category="pizza">
+            <figure class="menu-image">
+              <img src="images/Veg-Pizza.webp" alt="Pizza" />
+            </figure>
+            <h3>Veg Pizza</h3>
+            <p>Delicious vegetarian delight with fresh toppings.</p>
 
-<article class="menu-card" data-category="desserts">
-  <figure class="menu-image">
-   
-      <img src="images/Oreo-Cookies.webp" alt="Dessert">
+            <!-- Sizes and prices -->
+            <div class="sizes-row">
+              <span>Small - <span class="price">Rs350</span></span>
+              <span>Medium - <span class="price">Rs550</span></span>
+              <span>Large - <span class="price">Rs750</span></span>
+            </div>
+          </article>
 
-  </figure>
-  <h3>Oreo Cookies</h3>
-  <p>Delicious cookies with Oreo filling.</p>
-<span class="price">Rs 450</span>
-</article>
+          <article class="menu-card" data-category="desserts">
+            <figure class="menu-image">
+              <img src="images/Kheer.webp" alt="Dessert" />
+            </figure>
+            <h3>Kheer</h3>
+            <p>
+              Traditional Pakistani dessert made with rice, milk, and sugar.
+            </p>
+            <span class="price">Rs 450</span>
+          </article>
 
-<article class="menu-card" data-category="bbq">
-  <figure class="menu-image">
-   
-      <img src="images/Seekh-Kabab.webp" alt="BBQ">
-   
-  </figure>
-  <h3>Seekh kabab</h3>
-  <p>Grilled meatballs with a blend of spices.</p>
-  <span class="price">Rs 600</span>
-</article>
+          <article class="menu-card" data-category="burgers">
+            <figure class="menu-image">
+              <img src="images/Zinger-Burger.webp" alt="Burger" />
+            </figure>
 
-<article class="menu-card" data-category="drinks">
-  <figure class="menu-image">
-   
-      <img src="images/Soft-Drinks.webp" alt="Drink">
-     
-  </figure>
-  <h3>Soft Drinks</h3>
-  <p>Refreshing beverages to quench your thirst.</p>
-  <span class="price">Rs 150</span>
-</article>
+            <h3>Zinger Burger</h3>
+            <p>Crispy chicken patty with fresh vegetables.</p>
+            <span class="price">Rs 700</span>
+          </article>
 
+          <article class="menu-card" data-category="bbq">
+            <figure class="menu-image">
+              <img src="images/Malai-Boti.webp" alt="BBQ" />
+            </figure>
+            <h3>Malai Boti</h3>
+            <p>Rich and creamy chicken curry with a blend of spices.</p>
+            <span class="price">Rs 600</span>
+          </article>
 
-<article class="menu-card" data-category="pizza">
-  <figure class="menu-image">
-   
-      <img src="images/Veg-Pizza.webp" alt="Pizza">
-     
-  </figure>
-  <h3>Veg Pizza</h3>
-  <p>Delicious vegetarian delight with fresh toppings.</p>
-  
-  <!-- Sizes and prices -->
-  <div class="sizes-row">
-  <span>Small - <span class="price">Rs350</span></span>
-  <span>Medium - <span class="price">Rs550</span></span>
-  <span>Large - <span class="price">Rs750</span></span>
-</div>
+          <article class="menu-card" data-category="burgers">
+            <figure class="menu-image">
+              <img src="images/Mighty-Burger.webp" alt="Burger" />
+            </figure>
+            <h3>Mighty Burger</h3>
+            <p>Stacked patties with extra cheese and sauce.</p>
+            <span class="price">Rs 1000</span>
+          </article>
+        </div>
+      </section>
+    </main>
 
-</article>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 
-<article class="menu-card" data-category="desserts">
-  <figure class="menu-image">
-    
-      <img src="images/Kheer.webp" alt="Dessert">
-    
-  </figure>
-  <h3>Kheer</h3>
-  <p>Traditional Pakistani dessert made with rice, milk, and sugar.</p>
-  <span class="price">Rs 450</span>
-</article>
-
-<article class="menu-card" data-category="burgers">
-  <figure class="menu-image">
-
-      <img src="images/Zinger-Burger.webp" alt="Burger">
-  </figure>
-
-  <h3>Zinger Burger</h3>
-  <p>Crispy chicken patty with fresh vegetables.</p>
-  <span class="price">Rs 700</span>
-</article>
-
-<article class="menu-card" data-category="bbq">
-  <figure class="menu-image">
-   
-      <img src="images/Malai-Boti.webp" alt="BBQ">
-     
-  </figure>
-  <h3>Malai Boti</h3>
-  <p>Rich and creamy chicken curry with a blend of spices.</p>
-  <span class="price">Rs 600</span>
-</article>
-
-  <article class="menu-card" data-category="burgers">
-          <figure class="menu-image">
-         
-              <img src="images/Mighty-Burger.webp" alt="Burger">
-        
-          </figure>
-          <h3>Mighty Burger</h3>
-          <p>Stacked patties with extra cheese and sauce.</p>
-          <span class="price">Rs 1000</span>
-        </article>
-</div>
-</section>
-</main>
-
-  <!-- Footer -->
-  <footer id="footer"></footer>
-
-  <script src="js/navbar.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/menu.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
 </html>
