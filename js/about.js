@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
   const speed = 200; // smaller = faster
 
-  counters.forEach(counter => {
+  counters.forEach((counter) => {
     const suffix = counter.getAttribute("data-suffix") || "";
     const animate = () => {
       const target = +counter.getAttribute("data-target");
@@ -44,12 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        animate();
-        observer.disconnect(); // run once
-      }
-    }, { threshold: 0.5 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          animate();
+          observer.disconnect(); // run once
+        }
+      },
+      { threshold: 0.5 },
+    );
 
     observer.observe(counter);
   });

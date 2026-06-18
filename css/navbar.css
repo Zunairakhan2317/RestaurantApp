@@ -24,7 +24,7 @@
 }
 
 .logo-text {
-    font-family: "Brush Script MT", cursive;
+  font-family: "Brush Script MT", cursive;
   font-size: 1.2rem;
   font-weight: 700;
   color: #f8e8d4;
@@ -41,9 +41,14 @@
   color: #e8e2d6;
   text-decoration: none;
   transition: color 0.3s ease;
+  /* Ensure links use the same body typography as other pages */
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
 }
 
-.nav-links li a:hover ,
+.nav-links li a:hover,
 .nav-links li a.active {
   color: #d4af37;
 }
@@ -51,7 +56,100 @@
 .nav-links li a.active {
   color: #d4af37;
 }
+/* Global loader */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 7, 7, 0.98);
+  z-index: 99999;
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
+}
+.page-loader .loader-inner {
+  text-align: center;
+  color: #d4af37;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.page-loader .loader-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  color: #d4af37;
+}
+.page-loader .spinner {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 4px solid rgba(212, 175, 55, 0.12);
+  border-top-color: #d4af37;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.page-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(180deg, #d4af37 0%, #b28a21 100%);
+  color: #070707;
+  border: none;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transform: translateY(8px) scale(0.95);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+  z-index: 99999;
+}
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+#back-to-top svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+#back-to-top:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+#back-to-top:focus {
+  outline: 3px solid rgba(212, 175, 55, 0.35);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  #back-to-top {
+    right: 12px;
+    bottom: 18px;
+  }
+}
 /* Mobile toggle */
 .nav-toggle {
   display: none;

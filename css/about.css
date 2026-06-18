@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #fff;
   margin: 0;
 }
@@ -38,7 +38,7 @@ button,
 input,
 textarea,
 select {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 button,
@@ -60,7 +60,7 @@ h2 {
   font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 700;
   color: #fff;
- 
+
   text-align: center;
   letter-spacing: 0.02em;
   line-height: 1.1;
@@ -108,7 +108,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../images/hero-dish.jpg") center/cover no-repeat;
+  background: url("../images/hero-dish.webp") center/cover no-repeat;
   filter: blur(4px) brightness(0.5);
   z-index: 0;
 }
@@ -145,7 +145,6 @@ p {
   margin: 0;
 }
 
-
 .about-intro {
   padding: 70px 30px;
   background: #070707;
@@ -169,7 +168,6 @@ p {
   line-height: 1.9;
   margin: 0;
 }
-
 
 .story-section {
   padding: 70px 30px;
@@ -241,7 +239,6 @@ p {
   display: block;
   border-radius: 24px;
 }
-
 
 .mission-vision-section {
   padding: 70px 30px;
@@ -328,7 +325,6 @@ p {
     padding: 24px 18px;
   }
 }
-
 
 .team-section {
   padding: 70px 30px;
@@ -462,7 +458,6 @@ p {
   }
 }
 
-
 .gallery-section {
   padding: 70px 30px;
   background: #070707;
@@ -543,7 +538,6 @@ p {
     grid-template-columns: 1fr;
   }
 }
-
 
 .stats-section {
   padding: 70px 30px;
@@ -655,7 +649,6 @@ p {
   }
 }
 
-
 .cta-section {
   padding: 70px 30px;
   background: linear-gradient(
@@ -697,7 +690,7 @@ p {
 
 .cta-btn:hover {
   background: linear-gradient(135deg, rgb(221, 198, 94), #b28a21);
-  border-color:black;
+  border-color: black;
   transform: translateY(-3px);
   box-shadow: 0 18px 45px rgba(212, 175, 55, 0.25);
 }
